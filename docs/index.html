@@ -54,7 +54,19 @@
 
 <h2>Installation</h2>
 
-<p><span class="flag orange">TODO</span>  Write installation instructions here</p>
+<ul><li>Requires wget and crystal-lang.</li><li>Install dependencies if you don't already have them installed:</li></ul>
+
+<pre><code class="language-shell">brew update
+brew install wget
+brew install crystal</code></pre>
+
+<ul><li>Install snatch:</li></ul>
+
+<pre><code class="language-shell">git clone https://github.com/Iainmon/Web-Snatch.git
+cd Web-Snatch
+shards install
+crystal build src/snatch.cr --no-debug --release
+sudo cp snatch /usr/local/bin</code></pre>
 
 <h2>Usage</h2>
 
