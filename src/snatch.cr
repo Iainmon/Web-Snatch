@@ -1,20 +1,15 @@
-# TODO: Write documentation for `Snatch`
 require "CrystalColors"
 
+# This will prompt you to ask for a root domain to pull all assets from.
 module Snatch
   VERSION = "0.1.0"
   
-  # Dialogs
   puts "#{CrystalColors::OKGREEN}Hello! Enter a domain to snatch from!#{CrystalColors::ENDC}"
   domain = gets
   puts "#{CrystalColors::OKGREEN}Please enter a directory to snatch from #{CrystalColors::OKBLUE + CrystalColors::BOLD}#{domain}#{CrystalColors::ENDC} #{CrystalColors::OKGREEN}?#{CrystalColors::ENDC} #{CrystalColors::WARNING}(Default is '/')#{CrystalColors::ENDC}"
   path = gets
   path = "/" if path
-  # if path[0] == '/'
-  #     domainPath = "#{domain}#{path}"
-  # else
-  #     domainPath = "#{domain}/#{path}"
-  # end
+
   domainPath = "#{domain}/#{path}"
   puts "#{CrystalColors::OKGREEN}Where would you like to put the files from #{CrystalColors::OKBLUE + CrystalColors::BOLD}#{domain}#{CrystalColors::ENDC}#{CrystalColors::WARNING}#{path}#{CrystalColors::ENDC} #{CrystalColors::OKGREEN}?#{CrystalColors::ENDC} #{CrystalColors::WARNING}(Default is '/')#{CrystalColors::ENDC}"
 
