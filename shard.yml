@@ -1,0 +1,16 @@
+name: snatch
+version: 0.1.0
+
+authors:
+  - Iain Moncrief <Iainmoncrief@gmail.com>
+
+targets:
+  snatch:
+    main: src/snatch.cr
+
+dependencies:
+  CrystalColors:
+    github: Iainmon/Crystal-CLI-Colors
+crystal: 0.27.0
+
+license: MIT

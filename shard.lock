@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  CrystalColors:
+    github: Iainmon/Crystal-CLI-Colors
+    commit: 6635f33e5740d510aaa1b66aeee6c48ad50f560d
+
