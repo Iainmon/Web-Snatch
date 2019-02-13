@@ -1,0 +1,16 @@
+{
+  "name": "delme",
+  "version": "1.0.0",
+  "description": "TODO: Write a description here",
+  "main": "index.js",
+  "scripts": {
+    "task-run-bare": "crystal src/delme.cr",
+    "run-bare": "crystal src/delme.cr",
+    "build-bare": "crystal build src/delme.cr",
+    "task-run" : "sh scripts/run.sh",
+    "run" : "sh scripts/run.sh",
+    "export" : "sh scripts/export.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}

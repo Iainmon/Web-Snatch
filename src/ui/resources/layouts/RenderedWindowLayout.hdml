@@ -1,0 +1,65 @@
+Window #window {
+  @title: "Snatch";
+  @width: 640;
+  @height: 480;
+  @menubar: true;
+  
+  Group {
+    @title: "Snatch";
+    margined: true;
+
+    VerticalBox #vbox {
+      padded: true;
+      stretchy: true;
+
+      HorizontalBox #hbox1 {
+        padded: true;
+        stretchy: false;
+
+        Label #instructionlable1 {
+          @text: "Where should the files be saved?";
+          @stretchy: true;
+        }
+        Entry #pathtextbox {
+          text: "~/Desktop";
+          read_only: false;
+          stretchy: true;
+        }
+      }
+
+      Label #instructionlable2 {
+        @text: "Enter a domain name";
+        @stretchy: true;
+      }
+
+      HorizontalBox #hbox2 {
+        padded: true;
+        stretchy: false;
+
+        Entry #commandtextbox {
+          text: "www.example.com";
+          read_only: false;
+          stretchy: true;
+        }
+
+        Button #runbutton {
+          @text: "Snatch";
+        }
+      }
+
+
+      HorizontalSeparator {}
+
+      Group {
+        @title: "Status";
+        margined: true;
+
+        Label #statuslabel {
+          @text: "";
+          @stretchy: true;
+        }
+        
+      }
+    }
+  }
+}
